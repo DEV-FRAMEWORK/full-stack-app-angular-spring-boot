@@ -22,7 +22,8 @@ public class H2Bootstrap implements CommandLineRunner {
 		roomRepository.save(new RoomEntity(405, "200"));
 		roomRepository.save(new RoomEntity(406, "220"));
 		roomRepository.save(new RoomEntity(407, "250"));
-		
+		roomRepository.save(new RoomEntity(408, "150"));
+
 		Iterable<RoomEntity> itr = roomRepository.findAll();
 		
 		System.out.println("Printing out data: ");
